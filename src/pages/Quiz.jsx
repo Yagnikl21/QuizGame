@@ -25,7 +25,7 @@ export default function Quiz() {
   const fetchQuizData = async () => {
     try {
       setLoading(true);
-      const res = await axios.get("https://api.jsonserve.com/Uw5CrX");
+      const res = await axios.get("https://quizgame-backend-75j4.onrender.com/proxy");
       if (res?.data) {
         setQuizData(res.data);
         setQuestions(res.data?.questions);
